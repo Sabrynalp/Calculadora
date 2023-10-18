@@ -1,0 +1,117 @@
+/* Estilos CSS da calculadora */
+.calculator {
+    width: 260px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: right;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: right;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+input#display {
+    background: #fff;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4b0099;
+    color: #ffff;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+    background-color: #ecf4ff;
+    color: #4b0099;
+}
+
+button:active {
+    background-color: #c1c1c1;
+}
+
+/* Estilo para o botão "=" */
+button.equals {
+    background-color: #507dbc;
+    /* Cor de fundo laranja */
+    color: #fff;
+    /* Cor do texto branco */
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button.equals:hover {
+    background-color: #3bc983;
+    /* Cor de fundo laranja mais escura no hover */
+    color: #fff;
+}
+
+button.equals:active {
+    background-color: #3bc983;
+    /* Cor de fundo laranja ainda mais escura no click */
+}
+
+/* Estilo para o botão de histórico */
+button.history-button {
+    background-color: #4b0099;
+    /* Cor de fundo azul */
+    color: #fff;
+    /* Cor do texto branco */
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.history-button:hover {
+    background-color: #ecf4ff;
+    /* Cor de fundo azul mais escura no hover */
+    color: #4b0099;
+}
+
+button.history-button:active {
+    background-color: #1d4568;
+    /* Cor de fundo azul ainda mais escura no click */
+}
+
+/* Estilos para a seção de histórico */
+.history {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.history h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+}
+
+#history-list li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
